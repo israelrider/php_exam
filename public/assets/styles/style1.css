@@ -1,0 +1,403 @@
+{
+	--bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+;
+	--bs-body-font-family: var(--bs-font-sans-serif)
+;
+	--bs-body-font-size: 1rem
+;
+	--bs-body-font-weight: 400
+;
+	--bs-body-line-height: 1.5
+;
+	--bs-body-color: #212529
+;
+}
+
+@media (min-width: 1200px) {
+	.display-6 {
+		font-size: 2.5rem;
+	}
+}
+
+.display-6 {
+	font-size: calc(1.375rem + 1.5vw);
+	font-weight: 300;
+	line-height: 1.2;
+}
+
+@media (min-width: 1200px) {
+	h2, .h2 {
+		font-size: 2rem;
+	}
+}
+
+h2, .h2 {
+	font-size: calc(1.325rem + 0.9vw);
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+h2 {
+	display: block;
+	font-size: 1.5em;
+	margin-block-start: 0.83em;
+	margin-block-end: 0.83em;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+	font-weight: bold;
+	unicode-bidi: isolate;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	line-height: 1.5;
+	color: #121212;
+}
+
+textarea,
+input,
+button {
+	font-size: 1rem;
+	font-family: inherit;
+	border: none;
+	border-radius: 8px;
+	padding: 0.5rem 0.75rem;
+	box-shadow: 0 0 1px hsla(0, 0%, 0%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+	background-color: white;
+	line-height: 1.5;
+	margin: 0;
+	color: #3992ff;
+	font-weight: 500;
+}
+
+textarea:hover,
+input:hover,
+button:hover {
+	box-shadow: 0 0 1px hsla(0, 0%, 0%, 0.6), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+button:active {
+	box-shadow: 0 0 1px hsla(0, 0%, 0%, 0.4);
+	transform: translateY(1px);
+}
+
+html {
+	box-sizing: border-box;
+}
+
+html body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+	margin: 0;
+	font-family: var(--bs-body-font-family);
+	font-size: var(--bs-body-font-size);
+	font-weight: var(--bs-body-font-weight);
+	line-height: var(--bs-body-line-height);
+	color: var(--bs-body-color);
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html body #root {
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+html body #root #sidebar {
+	width: 22rem;
+	background-color: #f7f7f7;
+	border-right: solid 1px #e3e3e3;
+	display: flex;
+	flex-direction: column;
+}
+
+html body #root #sidebar > * {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+html body #root #sidebar h1 {
+	font-size: 1rem;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 1rem 2rem;
+	border-top: 1px solid #e3e3e3;
+	order: 1;
+	line-height: 1;
+}
+
+html body #root #sidebar h1::before {
+	content: url(/assets/images/smiley.svg);
+	zoom: 15%;
+	margin-right: 2.5rem;
+	position: relative;
+	top: 1px;
+}
+
+html body #root #sidebar nav {
+	flex: 1 1;
+	overflow: auto;
+	padding-top: 1rem;
+}
+
+html body #root #sidebar nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+html body #root #sidebar nav ul li {
+	margin: 0.25rem 0;
+}
+
+html body #root #sidebar nav ul li a {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	overflow: hidden;
+	white-space: pre;
+	padding: 0.5rem;
+	border-radius: 8px;
+	color: inherit;
+	text-decoration: none;
+	gap: 1rem;
+}
+
+html body #root #sidebar nav ul li a:hover {
+	background: #e3e3e3;
+}
+
+html body #root #sidebar nav ul li a.active,
+.delete-user {
+	background: hsl(224, 98%, 58%);
+	color: white;
+}
+
+html body #root #sidebar nav ul li a.pending {
+	color: hsl(224, 98%, 58%);
+}
+
+html body #root #sidebar nav ul li a span {
+	float: right;
+	color: #eeb004;
+}
+
+html body #root #sidebar nav ul li a.active span {
+	color: inherit;
+}
+
+html body #root #detail {
+	flex: 1 1;
+	width: 100%;
+	height: 100vh;
+}
+
+html body #root #detail.loading {
+	opacity: 0.25;
+	transition: opacity 200ms;
+	transition-delay: 200ms;
+}
+
+html body #root #detail #add-contact {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+html body #root #detail #add-contact form {
+	position: relative;
+}
+
+html body #root #detail #add-contact form input[type=search] {
+	width: 100%;
+	padding-left: 2rem;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 class=%27h-6 w-6%27 fill=%27none%27 viewBox=%270 0 24 24%27 stroke=%27%23999%27 stroke-width=%272%27%3E%3Cpath stroke-linecap=%27round%27 stroke-linejoin=%27round%27 d=%27M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z%27 /%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: 0.625rem 0.75rem;
+	background-size: 1rem;
+	position: relative;
+}
+
+html body #root #detail #add-contact form input[type=search].loading {
+	background-image: none;
+}
+
+html body #root #detail #contact {
+	max-width: 40rem;
+	display: flex;
+}
+
+html body #root #detail #contact h1 {
+	display: flex;
+	align-items: flex-start;
+	gap: 1rem;
+	font-size: 2rem;
+	font-weight: 700;
+	margin: 0;
+	line-height: 1.2;
+}
+
+html body #root #detail #contact h1 form {
+	display: flex;
+	align-items: center;
+	margin-top: 0.25rem;
+}
+
+html body #root #detail #contact h1 form button {
+	box-shadow: none;
+	font-size: 1.5rem;
+	font-weight: 400;
+	padding: 0;
+}
+
+html body #root #detail #contact-form {
+	display: flex;
+	max-width: 40rem;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+html body #root #detail #contact-form > p:first-child {
+	margin: 0;
+	padding: 0;
+}
+
+html body #root #detail #contact-form > p:first-child > :nth-child(2) {
+	margin-right: 1rem;
+}
+
+html body #root #detail #contact-form p:last-child {
+	display: flex;
+	gap: 0.5rem;
+	margin: 0 0 0 8rem;
+}
+
+html body #root #detail #contact-form p:last-child button[type=button] {
+	color: inherit;
+}
+
+html body #root #detail .forwarding-ref-form {
+	width: 52%;
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+html body #root #detail .forwarding-ref-form div {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+html body #root #detail .forwarding-ref-form div label {
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+html body #root #detail .forwarding-ref-form button {
+	width: 30%;
+	margin: 0 auto;
+}
+
+html body #root #detail .panel {
+	padding: 10px;
+	border: 1px solid #aaa;
+}
+
+html body #root #error-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+#contact h1 form button[value=true] {
+	color: #a4a4a4;
+}
+
+#contact h1 form button[value=true]:hover,
+#contact h1 form button[value=false] {
+	color: #eeb004;
+}
+
+form[action$=destroy] button {
+	color: #f44250;
+}
+
+#sidebar nav .active i {
+	color: inherit;
+}
+
+#contact h1 + p {
+	margin: 0;
+}
+
+#contact h1 + p + p {
+	white-space: break-spaces;
+}
+
+#contact h1:focus {
+	outline: none;
+	color: hsl(224, 98%, 58%);
+}
+
+#contact a[href*=twitter] {
+	display: flex;
+	font-size: 1.5rem;
+	color: #3992ff;
+	text-decoration: none;
+}
+
+#contact a[href*=twitter]:hover {
+	text-decoration: underline;
+}
+
+#contact img {
+	width: 12rem;
+	height: 12rem;
+	background: #c8c8c8;
+	margin-right: 2rem;
+	border-radius: 1.5rem;
+	object-fit: cover;
+}
+

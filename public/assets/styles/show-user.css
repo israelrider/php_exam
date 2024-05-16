@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+table {
+	border-collapse: collapse;
+	background-color: white;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+th, td {
+	font-family: 'Motnserrat', sans-serif;
+	text-align: left;
+	font-size: 22px;
+	padding: 10px;
+}
+
+th {
+	color: #000;
+}
+
+tr:nth-child(even) {
+	background-color: #faf5f5;
+}
+
+td.username-cell {
+	cursor: pointer;
+}
+
+tr:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.delete-user {
+	font-size: 14px;
+	padding: 10px 20px;
+	border-radius: 8px;
+	text-decoration: none;
+}

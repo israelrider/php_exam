@@ -1,5 +1,8 @@
 <?php
 
-$xyu = 'Hello World!';
+include __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Bootstrap.php';
+$bootstrap = new Bootstrap(true);
+$bootstrap->init();
 
-echo $xyu;
+$dispatcher = new Dispatcher();
+$dispatcher->dispatch();

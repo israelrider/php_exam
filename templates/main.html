@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="/favicon.ico">
+		<title>exam</title>
+
+		<link rel="stylesheet" href="/assets/styles/style1.css">
+		<link rel="stylesheet" href="/assets/styles/add-user.css">
+		<link rel="stylesheet" href="/assets/styles/show-user.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="/assets/scripts/script1.js"></script>
+	</head>
+	<body>
+		<div id="root">
+			<div id="sidebar">
+				<h1>
+					Show must go on
+				</h1>
+
+				<div>
+					<h2 class="display-6">
+						My Exam
+					</h2>
+				</div>
+
+				<nav>
+					<ul>
+						<li>
+							<a class="showUsers" href="/users/show">Show Users</a>
+						</li>
+						<li>
+							<a class="addUser" href="/users/add">Add User</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div id="detail">
+				{{content}}
+			</div>
+		</div>
+	</body>
+</html>
