@@ -16,7 +16,7 @@ class Layout {
 		echo $layout;
 	}
 
-	public function getContent($view, $data) {
+	public function getContent($view, $data = []) {
 		ob_start();
 		include $view;
 		$content = ob_get_contents();

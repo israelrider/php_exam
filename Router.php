@@ -10,6 +10,7 @@ class Router {
 		'users/add' => 'addUser',
 		'users/save' => 'saveUser',
 		'users/delete' => 'deleteUser',
+		'file-issue/resume-file' => 'resumeFile',
 	];
 
 	public function run() {

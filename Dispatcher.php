@@ -31,6 +31,13 @@ class Dispatcher {
 				$controller = new UsersController($layout, $userModel, $validator);
 				$model = 'deleteUser';
 				break;
+			case 'resumeFile':
+				$controller = new FileIssueController($layout);
+				$model = 'returnForm';
+				if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+					$model = 'getFile';
+				}
+				break;
 			default:
 				$controller = new UsersController($layout, $userModel, $validator);
 				$model = 'showUsers';
@@ -44,6 +51,7 @@ class Dispatcher {
 				return;
 			case 'saveUser':
 			case 'deleteUser':
+			case 'getFile':
 				echo json_encode($content);
 				return;
 			default:
