@@ -11,6 +11,7 @@ class Router {
 		'users/save' => 'saveUser',
 		'users/delete' => 'deleteUser',
 		'file-issue/resume-file' => 'resumeFile',
+		'mailer/send-email' => 'sendEmail',
 	];
 
 	public function run() {

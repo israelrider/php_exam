@@ -38,6 +38,10 @@ class Dispatcher {
 					$model = 'getFile';
 				}
 				break;
+			case 'sendEmail':
+				$controller = new MailerController($layout);
+				$model = 'emailForm';
+				break;
 			default:
 				$controller = new UsersController($layout, $userModel, $validator);
 				$model = 'showUsers';
