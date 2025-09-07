@@ -12,6 +12,7 @@ class Router {
 		'users/delete' => 'deleteUser',
 		'file-issue/resume-file' => 'resumeFile',
 		'mailer/send-email' => 'sendEmail',
+		'cookie/issue' => 'cookieIssue',
 	];
 
 	public function run() {

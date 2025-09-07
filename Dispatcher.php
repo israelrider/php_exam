@@ -42,6 +42,10 @@ class Dispatcher {
 				$controller = new MailerController($layout);
 				$model = 'emailForm';
 				break;
+			case 'cookieIssue':
+				$controller = new CookieIssueController($layout);
+				$model = 'cookieIssue';
+				break;
 			default:
 				$controller = new UsersController($layout, $userModel, $validator);
 				$model = 'showUsers';
